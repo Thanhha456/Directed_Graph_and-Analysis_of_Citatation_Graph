@@ -1,3 +1,6 @@
+Project for assessment in "Algorithmic Thinking (Part 1)" course at Rice university.  
+https://www.coursera.org/learn/algorithmic-thinking-1  
+
 ## Assessment:**Degree Distributions for Graphs and Analysis of Citation Graphs**
 
 **Firts part:** Write Python code that creates dictionaries corresponding to some simple examples of graphs.
@@ -7,8 +10,8 @@ You will also implement two short functions that compute information about the d
 
 **Third part:** Analyze a real-world problem: How do scientific papers get cited?
 - Your task is to load a provided citation graph for 27,770 high energy physics theory papers. This graph has 352,768 edges.
-You should use the following code to load the citation graph as a dictionary
-CITATION_URL = "http://storage.googleapis.com/codeskulptor-alg/alg_phys-cite.txt"
+You should use the following code to load the citation graph as a dictionary.  
+CITATION_URL = "http://storage.googleapis.com/codeskulptor-alg/alg_phys-cite.txt"  
 Compute the in-degree distribution for this citation graph. Once you have computed this distribution,
 you should normalize the distribution (make the values in the dictionary sum to one) and then compute a log/log plot of the points in this normalized distribution.
 - Generate random directed graphs: For every ordered pair of distinct nodes (i,j), the modified algorithm adds the directed edge from i to j with probability p.
@@ -16,8 +19,8 @@ Consider the shape of the in-degree distribution for an ER graph and compare its
 - Create a complete directed graph on m nodes. Then, the algorithm grows the graph by adding n−m nodes, where each new node is connected to m nodes randomly
 chosen from the set of existing nodes. As an existing node may be chosen more than once in an iteration,
 we eliminate duplicates (to avoid parallel edges); hence, the new node may be connected to fewer than m existing nodes upon its addition.
-For this question, we will choose values for n and m that yield a DPA graph whose number of nodes and edges is roughly the same to those of the citation graph.
-http://www.codeskulptor.org/#alg_dpa_trial.py
+For this question, we will choose values for n and m that yield a DPA graph whose number of nodes and edges is roughly the same to those of the citation graph.    
+http://www.codeskulptor.org/#alg_dpa_trial.py  
 For the nodes, choosing n to be the number of nodes as the citation graph is easy.
 Since each step in the DPA algorithm adds m edges to the graph, a good choice for m is an integer that is close to the average out-degree of the physics citation graph.
 Compute a DPA graph, and then plot the in-degree distribution for this DPA graph. Compute a (normalized) log/log plot of the points in the graph's in-degree distribution
